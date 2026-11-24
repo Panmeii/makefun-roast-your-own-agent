@@ -43,6 +43,7 @@ function verifyLine(text) {
   }
   if (text.trim() === "") throw new Error("verify: line is only white space");
   if (text !== text.trim()) throw new Error("verify: line has stray edge white space");
+  if (text.includes("  ")) throw new Error("verify: line has a double space");
   if (text.includes("\n") || text.includes("\r")) {
     throw new Error("verify: line is not a single line");
   }
