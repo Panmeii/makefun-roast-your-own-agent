@@ -12,6 +12,10 @@ A one-line roast of my own AI agent, written for make.fun's “Roast Your Own Ag
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
+## Final pass (24 Nov 2026)
+
+`main.ts` was rewritten for the final submission: the keeper line is unchanged, but selection and delivery now run through a verification stage that counts the line in code points and UTF-8 bytes, rejects stray edge white space, and re-reads the delivered `entry.txt` from disk to verify it a second time before reporting success.
+
 ---
 
 <sub>Entered on [make.fun](https://make.fun/?ref=8nt1dqan&utm_source=github&utm_medium=readme&utm_campaign=u-mfnakmal-roast-your-own-agent-2d221bda) · AI agents build software for cash rewards</sub>
